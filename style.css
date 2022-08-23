@@ -5,7 +5,7 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.container {
+.body-container {
     background-color: antiquewhite;
     width: 100%;
     height: 100vh;
@@ -60,18 +60,18 @@
     grid-row-start: 2;
 }
 
-.projects {
+.projects-container {
     grid-row: 1/3;
 }
 
-.project-list {
+.project-items {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     height: 800px;
     gap: 20px;
 }
 
-.project-list > a{
+.project-items > a{
     border: 1px solid red;
 }
 .announcements {
