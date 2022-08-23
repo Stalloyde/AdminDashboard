@@ -67,7 +67,7 @@
 .project-items {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    height: 800px;
+    height: 90%;
     gap: 20px;
 }
 
@@ -75,13 +75,26 @@
     background-color: whitesmoke;
 }
 
-.announcements {
-    background-color: blue;
-    display: grid;
+.announcements-container {
+    grid-column: 2/3;
 }
 
-.trending {
-    background-color: rgb(231, 58, 15);
+.announcements-items {
+    background-color: whitesmoke;
     display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
+    height: 80%;
+}
+
+.trending-container {
     grid-column: 2/3;
+}
+
+.trending-items {
+    background-color: whitesmoke;
+    display: grid; 
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
+    height: 80%;
 }
