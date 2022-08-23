@@ -31,7 +31,7 @@
 .header-items2 {
     background-color: gold;
     height: 60%;
-    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(5, 1fr);
     display: grid;
 }
 
@@ -67,8 +67,16 @@
     gap: 20px;
 }
 
-.project-items > a {
+.project-items > div {
+    display:grid;
     background-color: whitesmoke;
+    grid-template-rows: 3fr 1fr;
+}
+
+.action-keys {
+    display:grid;
+    grid-template-columns: 5fr repeat(3,1fr);
+    grid-template-rows: 1fr;
 }
 
 .announcements-container {
@@ -78,7 +86,7 @@
 .announcements-items {
     background-color: whitesmoke;
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
     gap: 20px;
     height: 80%;
 }
@@ -90,7 +98,18 @@
 .trending-items {
     background-color: whitesmoke;
     display: grid; 
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: repeat(4,1fr);
     gap: 20px;
     height: 80%;
+}
+
+.trending-items > a {
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.profile-photo {
+    border: 1px solid red;
+    grid-row: 1/3;
 }
