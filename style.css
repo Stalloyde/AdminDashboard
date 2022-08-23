@@ -71,9 +71,10 @@
     gap: 20px;
 }
 
-.project-items > a{
-    border: 1px solid red;
+.project-items > a {
+    background-color: whitesmoke;
 }
+
 .announcements {
     background-color: blue;
     display: grid;
