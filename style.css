@@ -20,25 +20,27 @@
 
 .sidebar-items {
     display: grid;
-    grid-template-rows: 2fr repeat(9, 1fr);
-    grid-template-columns: 1fr 5fr;
-    height: 50%;
     padding: 1em;
     margin: 2em 1em;
-    align-items: center;
     color: aliceblue;
     gap: 20px;
 }
 
 .sidebar-items > h2 {
-    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
 }
 
 .sidebar-items > a {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
     color: aliceblue;
     font-weight: 500;
     text-decoration: none;
 }
+
 
 .header {
     display: grid;
@@ -46,6 +48,8 @@
     grid-column-start: 2;
     grid-row-start: 1;
     padding: 1em;
+    box-shadow: 0px 5px 5px burlywood;
+    z-index: 1;
 }
 
 .header-item1{
@@ -75,7 +79,6 @@ input {
     grid-template-columns: repeat(3,1fr);
     align-items: center;
     grid-column-start: 3;
-    gap: 20px;
 }
 
 button {
@@ -101,13 +104,15 @@ button {
     grid-template-columns: 3fr 1fr;
     grid-column-start: 2;
     grid-row-start: 2;
-    background-color: silver;
+    background-color: gainsboro;
     padding: 1em;
-    box-shadow: 0px -5px 5px burlywood;
+    z-index: 0;
 }
 
 .projects-container {
     grid-row: 1/3;
+    padding: 1em;
+    margin: 1em 0;
 }
 
 .project-items {
@@ -115,12 +120,15 @@ button {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     height: 90%;
     gap: 20px;
+    margin: 1em 0;
 }
 
 .project-items > div {
     display:grid;
     grid-template-rows: 3fr 1fr;
     background-color: whitesmoke;
+    border-radius: 10px;
+    padding: 1em;
 }
 
 .action-keys {
@@ -131,26 +139,36 @@ button {
 
 .announcements-container {
     grid-column: 2/3;
+    padding: 1em;
+    margin: 1em 0;
 }
 
 .announcements-items {
     display: grid;
     grid-template-rows: repeat(3, 1fr);
     background-color: whitesmoke;
+    border-radius: 10px;
     gap: 20px;
     height: 80%;
+    margin: 1em 0;
+    padding: 1em;
 }
 
 .trending-container {
     grid-column: 2/3;
+    padding: 1em;
+    margin: 1em 0;
 }
 
 .trending-items {
     display: grid; 
     grid-template-rows: repeat(4,1fr);
     background-color: whitesmoke;
+    border-radius: 10px;
     gap: 20px;
     height: 80%;
+    margin: 1em 0;
+    padding: 1em;
 }
 
 .trending-items > a {
@@ -161,7 +179,6 @@ button {
 
 .profile-photo {
     grid-row: 1/3;
-    border: 1px solid red;
 }
 
 .icons:hover {
