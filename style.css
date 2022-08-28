@@ -155,14 +155,18 @@ button {
     padding: 1.5em;
 }
 
-.announcements-items > div > h3 {
-    padding-bottom: 0.5em;
-}
-
 .announcements-items > div {
     border-bottom: 1px solid burlywood;
     padding-bottom: 1em;
-    font-size:small;
+    font-size:0.8em;
+}
+
+.announcements-items > div:last-child {
+    border-bottom: none;
+}
+
+.announcements-items > div > h3 {
+    padding-bottom: 0.5em;
 }
 
 .trending-container {
@@ -182,10 +186,18 @@ button {
     padding: 1.5em;
 }
 
-.trending-items > a {
+.trending-items > div {
     display:grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 0.8fr 2fr;
     grid-template-rows: 1fr 1fr;
+    font-size:0.8em;
+    align-items: center;
+    border-bottom: 1px solid burlywood;
+    padding-bottom: 1em;
+}
+
+.trending-items > div:last-child {
+    border-bottom: none;
 }
 
 .profile-photo {
